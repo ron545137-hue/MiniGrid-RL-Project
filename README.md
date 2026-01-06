@@ -18,10 +18,27 @@ stable-baselines3
 
 moviepy (用于视频录制)
 
-快速开始
-
-训练与对比: 运行 python train_comparison.py
+代码介绍：
 
 生成图表: 运行 python plot_results.py
 
 查看演示: 运行 python test_minigrid_hd.py
+
+训练过程 ：
+Level 1: Basic Navigation (Empty Room)
+
+Focus: Understanding the basic PPO training loop and reward signals.
+
+Observation: Flat observation.
+
+Level 2: Logical Reasoning (DoorKey)
+
+Focus: Solving causal dependencies (Pick up key -> Open door).
+
+Innovation: Custom CNN feature extractor was designed to handle 7x7 spatial information.
+
+Level 3: Long-term Planning (Multi-Room)
+
+Focus: Navigating through multiple connected compartments.
+
+Scale: Increased training steps to 500k to ensure stable policy convergence.

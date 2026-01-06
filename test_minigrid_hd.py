@@ -9,7 +9,6 @@ import torch as th
 from torch import nn
 
 
-# === 1. 定义我们之前的 CNN 特征提取器 (实验组) ===
 class MinigridFeaturesExtractor(BaseFeaturesExtractor):
     def __init__(self, observation_space: gym.spaces.Box, features_dim: int = 128):
         super().__init__(observation_space, features_dim)
